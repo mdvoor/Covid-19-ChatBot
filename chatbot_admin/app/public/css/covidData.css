@@ -1,0 +1,22 @@
+
+#td-count{
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+.arrBtn{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    font-size: 20px;
+    display: none;
+    color: #fff !important;
+    padding: 10px 15px;
+    background: #343a40;
+    z-index: 999;
+}
+.arrBtnDiv{
+    width: 100%;
+}

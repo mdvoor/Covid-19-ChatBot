@@ -1,0 +1,281 @@
+/*
+
+01. Ball content
+
+02. wp Chat bot Message container
+
+    -A Link Item
+
+    -B Loading
+
+03. wp Chat bot Message Editor
+
+04. wp Chat bottom Tab Nav Editor
+05. Tab Feature Product
+
+06. Tab Cart
+
+07. Product Details
+
+*/
+
+/*********************
+
+01. ball content wrapper
+
+**********************/
+
+.chatbot-board-container {
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, .30);
+    overflow: hidden;
+}
+
+.chatbot-board-container:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -26px;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 30px solid #ffffff;
+
+}
+
+/******************************
+
+02. wp Chat bot Message container
+
+*********************************/
+
+.chatbot-header {
+
+    background: #1f8ceb;
+
+}
+
+.chatbot-header h3 {
+
+    color: #ffffff;
+
+    font-size: 18px !important;
+
+    letter-spacing: 1px;
+
+}
+
+
+ul.chatbot-messages-container li {
+
+    font-size: 14px;
+
+}
+
+ul.chatbot-messages-container > li.chatbot-msg {
+
+    padding-left: 50px;
+
+}
+
+ul.chatbot-messages-container > li.chat-user-msg {
+
+    padding-right: 50px;
+
+}
+ul li .chatbot-avatar {
+    margin-top: 0 !important;
+}
+ul.chatbot-messages-container > li .chatbot-avatar, .chatbot-agent-profile .chatbot-widget-avatar {
+
+position: absolute;
+
+top: 0;
+
+width: 52px;
+
+height: 52px;
+
+overflow: hidden;
+
+border-radius: 50%;
+}
+
+ul.chatbot-messages-container > li.chatbot-msg .chatbot-avatar, .chatbot-agent-profile .chatbot-widget-avatar {
+
+left: 6px;
+}
+
+ul.chatbot-messages-container > li.chat-user-msg .chatbot-avatar {
+
+right: -14px;
+}
+
+ul.chatbot-messages-container > li > .chatbot-paragraph, .chatbot-agent-profile .chatbot-bubble {
+
+    padding: 8px 15px;
+
+    max-width: 90%;
+
+    box-shadow: 0 2px 8px #bfbfbf;
+
+    line-height: 150%;
+
+    display: table;
+
+}
+
+ul.chatbot-messages-container > li.chat-user-msg .chatbot-paragraph {
+
+    text-align: right;
+
+    float: right;
+
+}
+
+ul.chatbot-messages-container > li.chat-user-msg .chatbot-paragraph {
+
+background-color: #ffffff;
+
+color: #494949;
+
+margin-left: 10%;
+
+border-radius: 10px 10px 0 10px;
+}
+
+
+ul.chatbot-messages-container li:first-child.chatbot-msg .chatbot-paragraph {
+
+    background-color: transparent;
+
+    color: #494949;
+
+}
+
+/************ 02 (A). Link Item *************/
+
+span.qcld-chatbot-product-category,
+span.qcld-chatbot-support-items,
+span.qcld-chatbot-wildcard,
+span.qcld-chatbot-suggest-email,
+span.qcld-chatbot-reset-btn,
+#chatbot-loadmore, .chatbot-loadmore, span.qcld-chatbot-suggest-phone {
+
+    color: #000000;
+    background-size: 200% auto;
+    border: 1px solid #ffffff;
+    background-color: #1f8ceb;
+	display: inline-block;
+    margin: 3px auto;
+    padding: 6px 11px;
+    
+
+}
+
+span.qcld-chatbot-product-category:hover,
+span.qcld-chatbot-support-items:hover,
+span.qcld-chatbot-wildcard:hover,
+span.qcld-chatbot-suggest-email:hover,
+span.qcld-chatbot-reset-btn:hover,
+#chatbot-loadmore:hover, .chatbot-loadmore:hover {
+
+    background-position: right center;
+
+    box-shadow: none;
+	background-color: #a1c4fd;
+
+}
+
+/**************** 02. (B) Loading  **********/
+
+ul.chatbot-messages-container > li .chatbot-paragraph img.chatbot-comment-loader {
+
+    background-color: #fff;
+
+    padding: 1px;
+
+    border-radius: 5px;
+
+    margin: 0 auto;
+
+    display: block;
+
+}
+
+/*******************************
+
+03. Chat bot Message Editor
+
+**********************************/
+
+.chatbot-editor-container {
+
+    background-color: #f2f6f9;
+
+}
+
+.chatbot-editor-container input, .chatbot-editor-area input::-webkit-input-placeholder, .chatbot-editor-area input::-moz-placeholder, .chatbot-editor-area input:-ms-input-placeholder, .chatbot-editor-area input:-moz-placeholder {
+
+    color: #565867;
+
+}
+
+/*******************************
+
+04.Chat bottom Tab Nav Editor
+
+**********************************/
+
+.chatbot-footer {
+
+    padding: 0;
+
+}
+
+.chatbot-tab-nav ul li a[data-option="recent"] {
+
+    background-position: -7px -47px;
+
+}
+
+.chatbot-tab-nav ul li a[data-option="cart"] {
+
+    background-position: -47px -47px;
+
+}
+
+.chatbot-tab-nav ul li a[data-option="chat"] {
+
+    background-position: -82px -42px;
+
+}
+
+.chatbot-tab-nav ul li a[data-option="help"] {
+
+    background-position: -129px -47px;
+
+}
+
+
+
+.chatbot-tab-nav ul li a[data-option="chat"]:after {
+
+content: "";
+
+position: absolute;
+
+border-radius: 50%;
+
+
+left: -9px;
+
+right: -9px;
+
+bottom: -9px;
+
+top: -9px;
+}
+

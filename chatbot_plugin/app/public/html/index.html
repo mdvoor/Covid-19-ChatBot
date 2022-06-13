@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="covid-19 questions and answers corona virus covid-19 covid" name="covid-19 virus chatbot">
+	<title>Covid-19 Chatbot</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body onload="onLoad()">
+	<!-- ChatBot Ball Icon -->
+	<div id="chatbot-chat-container">
+		<div id="chatbot-ball" class="">
+			<div class="chatbot-ball chatbot-animation-active">
+				<div class="chatbot-ball-animator chatbot-ball-animation-switch"></div>
+				<img src="./images/bot.png" alt="Chat bot icon">
+			</div>
+		</div>
+	</div>
+
+	<!-- ChatBot Board Container -->
+	<div id="chatbot-board-container" class="bot-wrapper chatbot-board-container">
+		<div id="bot-header" class="chatbot-header">
+			<div id="close-div">X</div>
+		</div>
+		<div class="bubbleDiv chatbot-board-inner chatbot-content">
+			<div class="chatbot-messages-wrapper">
+				<ul id="chatbot-messages-container" class="chatbot-messages-container"></ul>
+			</div>
+		</div>
+		<div id="bot-footer">
+			<div id="bot-search">
+				<div class="autocomplete" id="autocomplete">
+					<input id="myQuestion" type="text" name="myQuestion" placeholder="Ask your question here!">
+					<button id="ask-btn" type="button"></button>
+				</div>
+			</div>
+			<div class="chatbot-tab-nav">
+				<ul>
+					<li class=""><a class="chatbot-operation-option" id="data-help" data-option="help" href="#"
+							title="Help"></a></li>
+					<li class="chatbot-operation-active"><a class="chatbot-operation-option" id="data-chat"
+							data-option="chat" href="#" title="Chat"></a></li>
+					<li class=""><a class="chatbot-operation-option" id="data-support" data-option="support" href="#"
+							title="Support"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/javascript/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./javascript/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="./javascript//bootstrap.js"></script>
+	<script type="text/javascript" src="/javascript/chatBot-client.js"></script>
+	<!-- <script type="text/javascript" src="/javascript/iframe.js"></script> -->
+
+</body>
+
+</html>

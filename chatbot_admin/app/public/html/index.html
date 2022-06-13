@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid-19 ChatBot Admin</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container mt-1">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <h3 class="navbar-brand mr-5">COVID-19 ChatBot</h3>
+      <ul class="navbar-nav ml-5">
+        <li class="nav-item ml-5">
+          <a class="nav-link" href="/covidData">Covid-19 Data</a>
+        </li>
+        <li class="nav-item ml-5">
+          <a class="nav-link active" href="/">New Questions</a>
+        </li>
+        <li class="nav-item ml-5">
+          <a class="nav-link" href="/nonCovidData">Non-Covid Data</a>
+        </li>
+      </ul>
+    </nav>
+    <h2 class="formHeading text-center text-muted mt-3">Please Fill Out The Fields Below.</h2>
+    <!-- Form -->
+    <form method="POST" action="/api/updateDB">
+      <div class="form-group mt-5">
+        <label for="question">Question:</label>
+        <select name="questionID" class="form-control" id="question"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="relevant">Relevance:</label>
+        <select name="relevant" class="form-control" id="relevant">
+          <option value="true">Question is relevant</option>
+          <option value="false">Question is irrelevant</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="answer">Answer:</label>
+        <textarea name="answer" class="form-control" rows="5" id="answer"></textarea>
+      </div>
+      <button type="submit" class="submitBtn btn btn-dark">Submit</button>
+    </form>
+    <!-- Footer -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-5">
+      <ul class="navbar-nav ml-5">
+        <li class="nav-item ml-5">
+          <a class="nav-link active" href="#"></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../js/newQuestions.js"></script>
+</body>
+
+</html>
